@@ -14,9 +14,21 @@ import integrador_01.Logica.IMago;
  */
 public class Hechicero extends Campeon implements IMago {
 
+    public String estiloDeMagia;
+
+    public Hechicero(String estiloDeMagia, String nombre, String tipo, int danioFisico, int danioMagico, int vida, int armadura) {
+        super(nombre, tipo, danioFisico, danioMagico, vida, armadura);
+        this.estiloDeMagia = estiloDeMagia;
+    }
+
+    public Hechicero() {
+    }
+    
+    
+    
     @Override
     public void usarAtaqueBasico() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        System.out.println(nombre + " uso su ataque basico");
     }
 
     @Override
